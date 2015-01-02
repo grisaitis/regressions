@@ -5,6 +5,6 @@ import pandas as pd
 
 df = pd.read_csv('prostate.data',sep='\t',index_col=0)
 
+df['Intercept'] = 1
+
 print df.head()
-
-
